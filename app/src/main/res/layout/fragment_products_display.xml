@@ -15,7 +15,7 @@
         android:fontFamily="@font/gotham_medium"
         android:text="Show all"
         android:textColor="#0040FF"
-        android:textSize="13sp"
+        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/number_of_accessories" />
 
@@ -115,7 +115,7 @@
         android:fontFamily="@font/gotham_medium"
         android:text="Show all"
         android:textColor="#0040FF"
-        android:textSize="13sp"
+        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/number_of_products" />
 
