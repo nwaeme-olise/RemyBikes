@@ -9,5 +9,14 @@
         android:id="@+id/productsDisplayFragment"
         android:name="com.olisemeka.remybikes.ProductsDisplayFragment"
         android:label="fragment_products_display"
-        tools:layout="@layout/fragment_products_display" />
+        tools:layout="@layout/fragment_products_display" >
+        <action
+            android:id="@+id/action_productsDisplayFragment_to_selectedProductDisplayFragment"
+            app:destination="@id/selectedProductDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedProductDisplayFragment"
+        android:name="com.olisemeka.remybikes.SelectedProductDisplayFragment"
+        android:label="fragment_selected_product_display"
+        tools:layout="@layout/fragment_selected_product_display" />
 </navigation>
