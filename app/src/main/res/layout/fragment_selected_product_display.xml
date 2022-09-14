@@ -91,7 +91,7 @@
         android:layout_marginTop="6dp"
         android:fontFamily="@font/gotham_thin"
         android:textColor="#0040FF"
-        android:textFontWeight="500"
+        android:textFontWeight="1000"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="@+id/textview_bike_name"
         app:layout_constraintTop_toBottomOf="@+id/textview_bike_name"
@@ -128,17 +128,20 @@
         app:layout_constraintStart_toStartOf="@+id/textview_bike_name"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_add_to_cart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="33dp"
+        android:background="@drawable/round_button"
         android:backgroundTint="#0040ff"
-        android:fontFamily="@font/gotham_medium"
-        android:padding="15dp"
+        android:fontFamily="@font/gotham_thin"
+        android:padding="20dp"
         android:text="Add to cart"
+        android:textColor="@color/white"
+        android:textFontWeight="1000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
