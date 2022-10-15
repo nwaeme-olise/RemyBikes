@@ -1,4 +1,4 @@
-package com.olisemeka.remybikes
+package com.olisemeka.remybikes.ui.productsdisplay
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

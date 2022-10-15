@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/productsDisplayFragment"
-        android:name="com.olisemeka.remybikes.ProductsDisplayFragment"
+        android:name="com.olisemeka.remybikes.ui.productsdisplay.ProductsDisplayFragment"
         android:label="fragment_products_display"
         tools:layout="@layout/fragment_products_display" >
         <action
@@ -19,4 +19,9 @@
         android:name="com.olisemeka.remybikes.SelectedProductDisplayFragment"
         android:label="fragment_selected_product_display"
         tools:layout="@layout/fragment_selected_product_display" />
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.olisemeka.remybikes.OrderDetailsFragment"
+        android:label="Order Details"
+        tools:layout="@layout/fragment_order_details" />
 </navigation>
