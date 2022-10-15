@@ -8,7 +8,7 @@ data class Bike(
     private val brand: String,
     private val imageUrl: String,
     private var isInStock: Boolean,
-    private var rating: Float,
+    private var rating: Double,
     private var noOfReviews: Int,
     private var productDetails: SpannableString
 )
