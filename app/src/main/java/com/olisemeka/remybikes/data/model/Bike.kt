@@ -1,10 +1,11 @@
 package com.olisemeka.remybikes.data.model
 
 import android.text.SpannableString
+import androidx.annotation.DrawableRes
 
 data class Bike(
     val name: String,
-    val price: String,
+    val price: Int,
     val brand: String,
     val imageUrl: String,
     var isInStock: Boolean,

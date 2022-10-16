@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import com.olisemeka.remybikes.data.datasource.DataSource
 import com.olisemeka.remybikes.databinding.FragmentProductsDisplayBinding
 
 class ProductsDisplayFragment : Fragment() {
@@ -22,6 +24,8 @@ class ProductsDisplayFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.recyclerviewProducts.adapter = BikeListAdapter(requireContext(), DataSource.getBikeData())
+        binding.recyclerviewProducts.layoutManager = GridLayoutManager(requireContext(), 2)
 
     }
 

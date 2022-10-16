@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.olisemeka.remybikes.R
 import com.olisemeka.remybikes.data.model.Bike
+import java.text.NumberFormat
 
 class BikeListAdapter(private val context: Context, private val bikeList: ArrayList<Bike>): RecyclerView.Adapter<BikeListAdapter.BikeHolder>() {
     class BikeHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -27,11 +28,13 @@ class BikeListAdapter(private val context: Context, private val bikeList: ArrayL
     override fun onBindViewHolder(holder: BikeHolder, position: Int) {
         val bike = bikeList[position]
         holder.textViewBikeName.text = bike.name
-        holder.textViewBikePrice.text = bike.price
+        holder.textViewBikePrice.text = NumberFormat.getCurrencyInstance().format(bike.price)
         Glide.with(context)
             .load(bike.imageUrl)
+            .centerCrop()
             .into(holder.imageViewBike)
 
+//    holder.imageViewBike.setImageDrawable(context.getDrawable(bike.image))
     }
 
     override fun getItemCount() = bikeList.size
