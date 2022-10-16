@@ -1,11 +1,10 @@
 package com.olisemeka.remybikes.data.model
 
 data class Accessory(
-    private val name: String,
-    private val price: String,
-    private val imageUrl: String,
-    private var isInStock: Boolean,
-    private var rating: Float,
-    private var noOfReviews: Int,
-
-)
+    val name: String,
+    val price: Int,
+    val imageUrl: String,
+    var isInStock: Boolean,
+    var rating: Double,
+    var noOfReviews: Int,
+    )

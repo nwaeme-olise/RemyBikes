@@ -34,7 +34,7 @@ class BikeListAdapter(private val context: Context, private val bikeList: ArrayL
             .centerCrop()
             .into(holder.imageViewBike)
 
-//    holder.imageViewBike.setImageDrawable(context.getDrawable(bike.image))
+
     }
 
     override fun getItemCount() = bikeList.size

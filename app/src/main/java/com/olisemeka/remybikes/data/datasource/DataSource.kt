@@ -1,8 +1,7 @@
 package com.olisemeka.remybikes.data.datasource
 
 import android.text.SpannableString
-import androidx.core.text.toSpannable
-import com.olisemeka.remybikes.R
+import com.olisemeka.remybikes.data.model.Accessory
 import com.olisemeka.remybikes.data.model.Bike
 
 object DataSource {
@@ -47,6 +46,27 @@ object DataSource {
             Bike("CUBE KATHMANDU EXC - Trekking Bike", 1400, "CUBE",
             "https://images.bike24.net/media/720/i/mb/57/c6/b1/kathmandu-exc-darkgrey-grey-1092051.jpg",
             true, 0.0, 0, SpannableString(""))
+        )
+    }
+
+    fun getAccessoryData(): ArrayList<Accessory>{
+        return arrayListOf(
+            Accessory("Tacx NEO 2T Bundle - Smart Cycletrainer + Motion Plates + Mat", 1130,
+                "https://images.bike24.net/media/720/i/mb/95/d3/5a/tacx-neo-2t-bundle-1325944.jpg", true, 0.0, 0
+            ),
+            Accessory("Busch + Müller LEVAL E-Bike Bending Light Assistant for Front Light", 90,
+            "https://images.bike24.net/media/720/i/mb/91/da/ae/busch-mueller-365-leval-kurvenlichtadapter-main-1154167.jpg", true, 0.0, 0
+            ),
+            Accessory("Veloheld iconX - Frame Set with Steel Fork", 900,
+                "https://images.bike24.net/media/720/i/mb/19/99/7d/iconx-frame-steelfork-glokzin-teal-glossy-1-985567.jpg", true, 0.0, 0
+            ),
+            Accessory("SRAM RED eTap AXS HRD 2x12 Upgrade Set with Hydraulic Disc Brakes - Flat Mount - 6-Bolt", 1620,
+            "https://images.bike24.net/media/720/i/mb/7f/d3/bc/363229-00-d-782990.jpg", true, 0.0, 0
+            ),
+            Accessory("sailfish Mens Ignite Wetsuit", 240, "https://images.bike24.net/media/720/i/mb/1e/93/1a/366573-00-d-791428.jpg",
+            true, 0.0, 0),
+            Accessory("Bombtrack MACHI Jersey", 50, "https://images.bike24.net/media/720/i/mb/7e/f3/7b/bombtrack-machi-jersey-black-white-1117885.jpg",
+            true, 0.0, 0)
         )
     }
 }

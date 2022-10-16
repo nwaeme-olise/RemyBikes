@@ -24,7 +24,9 @@ class ProductsDisplayFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.recyclerviewProducts.adapter = BikeListAdapter(requireContext(), DataSource.getBikeData())
+        val bikeData = DataSource.getBikeData()
+        binding.numberOfProducts.text = bikeData.size.toString()
+        binding.recyclerviewProducts.adapter = BikeListAdapter(requireContext(), bikeData)
         binding.recyclerviewProducts.layoutManager = GridLayoutManager(requireContext(), 2)
 
     }
