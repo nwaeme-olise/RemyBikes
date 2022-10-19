@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/drawable/ic_bike_bmx.xml" value="0.167" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/drawable/ic_dial.xml" value="0.1805" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/drawable/ic_small_bike.xml" value="0.167" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/drawable/round_button.xml" value="0.1945" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/drawable/splash_screen.xml" value="0.1795" />
@@ -12,6 +13,7 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/layout/fragment_products_display.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/layout/fragment_selected_product_display.xml" value="0.22" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/layout/list_item_product.xml" value="0.25" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/layout/sample_color_dial_view.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/menu/menu_products_display.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/RemyBikes/app/src/main/res/menu/menu_selected_product_display.xml" value="0.2" />
       </map>

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.olisemeka.remybikes.R
@@ -19,6 +20,14 @@ class AccessoryListAdapter(private val context: Context, private val accessoryLi
         val imageViewFavourite: ImageView = itemView.findViewById(R.id.imageview_favourite)
         val textViewAccessoryName: TextView = itemView.findViewById(R.id.textview_bike_name)
         val textViewAccessoryPrice: TextView = itemView.findViewById(R.id.textview_bike_price)
+        var accessoryPosition = 0
+
+        init{
+            itemView.setOnClickListener {view ->
+                val action = ProductsDisplayFragmentDirections.actionProductsDisplayFragmentToSelectedProductDisplayFragment(accessoryPosition)
+                view.findNavController().navigate(action)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AccessoryHolder {
@@ -28,6 +37,7 @@ class AccessoryListAdapter(private val context: Context, private val accessoryLi
 
     override fun onBindViewHolder(holder: AccessoryHolder, position: Int) {
         val accessory = accessoryList[position]
+        holder.accessoryPosition = position
         holder.textViewAccessoryName.text = accessory.name
         holder.textViewAccessoryPrice.text = NumberFormat.getCurrencyInstance().format(accessory.price)
         Glide.with(context)

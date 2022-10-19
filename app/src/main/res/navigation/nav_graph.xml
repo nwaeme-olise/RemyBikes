@@ -16,12 +16,16 @@
     </fragment>
     <fragment
         android:id="@+id/selectedProductDisplayFragment"
-        android:name="com.olisemeka.remybikes.SelectedProductDisplayFragment"
+        android:name="com.olisemeka.remybikes.ui.selectedproductdisplay.SelectedProductDisplayFragment"
         android:label="fragment_selected_product_display"
-        tools:layout="@layout/fragment_selected_product_display" />
+        tools:layout="@layout/fragment_selected_product_display" >
+        <argument
+            android:name="itemPosition"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/orderDetailsFragment"
-        android:name="com.olisemeka.remybikes.OrderDetailsFragment"
+        android:name="com.olisemeka.remybikes.ui.orderdetails.OrderDetailsFragment"
         android:label="Order Details"
         tools:layout="@layout/fragment_order_details" />
 </navigation>
