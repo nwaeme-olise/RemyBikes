@@ -24,7 +24,7 @@ class AccessoryListAdapter(private val context: Context, private val accessoryLi
 
         init{
             itemView.setOnClickListener {view ->
-                val action = ProductsDisplayFragmentDirections.actionProductsDisplayFragmentToSelectedProductDisplayFragment(accessoryPosition)
+                val action = ProductsDisplayFragmentDirections.actionProductsDisplayFragmentToSelectedProductDisplayFragment(accessoryPosition, "ACC")
                 view.findNavController().navigate(action)
             }
         }

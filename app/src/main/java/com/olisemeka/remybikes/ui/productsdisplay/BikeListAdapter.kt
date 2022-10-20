@@ -23,7 +23,7 @@ class BikeListAdapter(private val context: Context, private val bikeList: ArrayL
 
         init{
             itemView.setOnClickListener {view ->
-                val action = ProductsDisplayFragmentDirections.actionProductsDisplayFragmentToSelectedProductDisplayFragment(bikePosition)
+                val action = ProductsDisplayFragmentDirections.actionProductsDisplayFragmentToSelectedProductDisplayFragment(bikePosition, "BIK")
                 view.findNavController().navigate(action)
             }
         }

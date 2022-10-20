@@ -74,14 +74,13 @@
         android:id="@+id/textview_in_stock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/gotham_black"
         android:text="In stock"
         android:textColor="#208b17"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textview_bike_name"
-        app:layout_constraintEnd_toEndOf="@+id/textview_bike_name"
-        app:layout_constraintStart_toStartOf="@+id/textview_bike_name" />
+        app:layout_constraintStart_toEndOf="@+id/textview_bike_name"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
 
     <TextView
         android:id="@+id/textView8"
@@ -113,6 +112,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
+        android:progressBackgroundTint="#F7DB48"
+        android:progressTint="#F7DB48"
         app:layout_constraintStart_toStartOf="@+id/textview_bike_name"
         app:layout_constraintTop_toBottomOf="@+id/textview_bike_price" />
 
@@ -120,9 +121,20 @@
         android:id="@+id/textview_product_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="13dp"
         android:fontFamily="@font/gotham_medium"
         android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textview_bike_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gotham_black"
+        android:text="PRODUCT DETAILS"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/textview_bike_name"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
