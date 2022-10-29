@@ -67,6 +67,7 @@ class SelectedProductDisplayFragment : Fragment() {
         binding.textviewBikeName.text = bike.name
         binding.textView8.text = getString(R.string.bike_brand, bike.brand)
         binding.textviewBikePrice.text = NumberFormat.getCurrencyInstance().format(bike.price)
+        binding.textView9.text = "PRODUCT DETAILS"
         binding.ratingBar.rating = bike.rating.toFloat()
         val productDetails = bike.productDetails
         productDetails.apply {
