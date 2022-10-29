@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentPadding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textview_bike_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/gotham_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Tata Stryder Big Rock 26TRTY546277" />
+
+        <TextView
+            android:id="@+id/textview_bike_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/gotham_medium"
+            app:layout_constraintStart_toStartOf="@id/textview_bike_name"
+            app:layout_constraintTop_toBottomOf="@id/textview_bike_name"
+            tools:text="#130,000" />
+
+        <ImageView
+            android:id="@+id/imageview_remove"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/circle"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textview_bike_price"
+            app:layout_constraintTop_toBottomOf="@+id/textview_bike_price"
+            app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+        <TextView
+            android:id="@+id/textview_number_of_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:fontFamily="@font/gotham_medium"
+            app:layout_constraintStart_toEndOf="@id/imageview_remove"
+            app:layout_constraintTop_toTopOf="@+id/imageview_remove"
+            tools:text="1" />
+
+        <ImageView
+            android:id="@+id/imageview_add"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="27dp"
+            android:background="@drawable/circle"
+            android:padding="3dp"
+            app:layout_constraintStart_toEndOf="@id/textview_number_of_orders"
+            app:layout_constraintTop_toTopOf="@+id/textview_number_of_orders"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
+
+        <ImageView
+            android:id="@+id/imageview_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageview_add"
+            app:srcCompat="@drawable/ic_baseline_delete_outline_24"
+            app:tint="#F00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
